@@ -1,0 +1,15 @@
+<html>
+<head>
+	<title>
+	</title>
+</head>
+<body>
+	<form method="post" action="{% url 'Votp' %}" enctype="multipart/form-data">
+            {% csrf_token %}
+                   <label>EnterOTP</label> <input type="text" name="notp"/>
+                  <br><input type="submit"/>
+            </form>
+            <div>{{ phone }}</div>
+<div>{{ detail }}</div>
+</body>
+</html>
